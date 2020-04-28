@@ -6,6 +6,10 @@
 * http://htmlbook.ru/samhtml/tipy-tegov/blochnye-elementy
 * http://htmlbook.ru/samhtml/tipy-tegov/strochnye-elementy
 * http://ibrain.kz/sozdanie-web-saytov/parnye-i-odinochnye-tegi-konteynery
+* http://htmlbook.ru/html/sup
+* http://htmlbook.ru/html/sub
+* https://htmlacademy.ru/courses/301/run/14
+* http://htmlbook.ru/html/hr
 
 # Практика
 
