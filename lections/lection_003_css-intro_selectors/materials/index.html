@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- 
+        Тезисы:
+            - CSS intro
+            - CSS rules/properties - color, font-size, font-weight, background-color
+            - CSS selectors - universal, type, class, id, attribute
+            - chrome inspector
+            - CSS selector - combinators, grouping
+        
+        Практика:
+            - practice with ul>li*50
+    -->
+</head>
+<body>
+
+    <!-- Way 1 -->
+    <!-- <span style="color: red; font-size: 14px;">Text example</span> 
+    <hr>
+    <span>Text 2 example</span> -->
+
+    <!-- Way 2 -->
+    <!-- <style>
+        span {
+            color: green;
+        }
+
+    </style> -->
+
+    <!-- <script>debugger;</script> -->
+    <!-- Way 3 -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <!-- <script>debugger;</script> -->
+    <!-- <hr>
+    <div class="block">
+        Content
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="">
+    </div>
+    <hr>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <hr>
+    <div class="block"></div>
+
+    <span class="block"></span>
+    <p class="block active" style="border-color: red;"></p>
+    <hr>
+
+    <input id="special_name" class="my-form-element" type="text" >
+    <input id="check_some" class="my-form-element" type="number">
+
+    <hr>
+
+    <div data-super-hero="bony">
+        Hello world!
+    </div>
+    <div data-super-hero>
+        Hello world!
+    </div> -->
+    <!-- ------------------------------------------ -->
+
+    <div class="container">
+        <span class="my-text">My text</span>
+        <ul>
+            <li>Content 1</li>
+            <li class="active">Content 2</li>
+            <li>
+                Content 3
+                <span class="my-text">My text</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="super-element">
+        <ul>
+            <li>Content 1</li>
+            <li>Content 2</li>
+            <li class="active">Content 3</li>
+        </ul>
+    </div>
+
+    <div class="element active">
+        Content
+    </div>
+
+</body>
+</html>

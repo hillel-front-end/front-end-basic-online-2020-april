@@ -1,0 +1,122 @@
+/* 
+
+selector {
+    property: value;
+    property1: value2;
+    ...
+    propertyn: valuen;
+}
+
+*/
+
+/* by type */
+
+/* a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+
+span {
+    color: red;
+    font-size: 28px;
+    background-color: blueviolet;
+}
+
+img {
+    width: 100px;
+} */
+
+/* by class . */
+
+/* .active {
+    background-color: aquamarine;
+} */
+
+.block {
+    background-color: cornflowerblue;
+    width: 250px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 12px;
+    border-color: black;
+}
+
+/* by id #*/
+
+#special_name {
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color: lightgray;
+    color: grey;
+}
+
+.my-form-element {
+    border: 4px dotted greenyellow;
+}
+
+/* by attr [] */
+
+/* 
+    <div data-super-hero="bony">
+        Hello world!
+    </div>
+*/
+
+/* [data-super-hero] {
+    color: red;
+    font-weight: bold;
+    font-size: 42px;
+    text-decoration: underline;
+} */
+/* 
+[data-super-hero="bony"] {
+    color: red;
+    font-weight: bold;
+    font-size: 42px;
+    text-decoration: underline;
+} */
+
+/* ----------------------------------------------------------- */
+
+
+/* .container ul li {
+    text-decoration: underline;
+}
+
+.container ul .active {
+    background-color: rosybrown;
+} */
+
+/* .container .active {
+    background-color: rosybrown;
+} */
+
+/* .container .my-text {
+    background-color: green;
+} */
+
+/* .container > .my-text {
+    background-color: hotpink;
+} */
+
+.super-element .active,
+.container > .my-text  {
+    color: red;
+}
+
+.element {
+    background-color: aquamarine;
+    border: 2px solid black;
+    width: 30%;
+}
+
+.active {
+    color: red;
+}
+
+.element.active {
+    color: blue;
+}
