@@ -1,0 +1,164 @@
+.my-link {
+    /* color: red; */
+}
+
+.my-link:visited {
+    /* color: blue; */
+}
+
+/* ------------------------- */
+
+.block {
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    /* transition: 1s; */
+}
+
+/* mouseover - mouseenter */
+.block:hover {
+    /* border-radius: 50%;
+    width: 400px;
+    height: 400px; */
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: aquamarine;
+    width: 120px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    box-shadow: 2px 3px 5px grey;
+    /* width: 125px; */
+    transform: scaleX(1.1);
+}
+
+/* ----------------- */
+
+
+/* .container ul.list {
+    /* background-color: bisque; */
+    /* list-style-type: disc; */
+}
+
+.container > ul.list {
+    list-style-type: square;
+}
+
+ul.list + span {
+    background-color: blueviolet;
+}
+
+ul.list ~ .selected, 
+ul.list ~ span {
+    background-color: blueviolet;
+}
+
+ul.list ~ span a {
+    background-color: red;
+} 
+
+/* ----------------------------------------- */
+
+/* .container > .list:hover + hr {
+    border-color: red;
+}  */
+
+/* ----------------------------------------- */
+
+/* 
+                - :first-child, :last-child, :nth-child(n), :nth-last-child(n)
+            - :nth-of-type(n), :nth-last-of-type(n)
+            - :only-child, :only-of-type, :first-of-type
+
+*/
+
+/* .my-list li:first-child {
+    color: red;
+} */
+
+/* .my-list li:last-child {
+    color: red;
+} */
+
+/* 
+    2n - каждый второй
+    3n - каждый третий
+    mn - каждый m-ный элемент
+
+*/
+/* .my-list li:nth-child(odd) {
+    color: red;
+} */
+
+/* .my-list li:nth-last-child(6) {
+    color: red;
+} */
+
+
+.my-list li:first-of-type {
+    /* color: red; */
+}
+
+/* .my-list span:first-of-type {
+    color: red;
+} */
+
+/* .my-list :first-child {
+    color: red;
+} */
+
+/* * {
+    text-decoration: underline;
+} */
+
+/* .container > .list > li:first-child {
+    color: red;
+} */
+
+/* .list > li:first-of-type {
+    color: red;
+}
+
+.list > li li:first-of-type {
+    color: blueviolet;
+} */
+
+/* .my-list li:last-of-type {
+    color: red;
+} */
+
+/* .my-list li:nth-of-type(2) {
+    color: red;
+}
+
+.my-list li:nth-last-of-type(2) {
+    color: red;
+} */
+
+/* --------------------------------------------- */
+
+/* .my-list span:only-child {
+    color: red;
+} */
+
+/* .my-list span:only-of-type {
+    color: red;
+} */
+
+/* ---------------------- */
+
+.my-list-example li {
+    border-bottom: 2px solid black;
+}
+
+.my-list-example li:only-child {
+    border: 0;
+}

@@ -1,0 +1,92 @@
+/* bad css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 1px solid red;
+    padding: 5px;
+    font-size: 0;
+}
+
+.block {
+    width: 150px;
+    height: 100px;
+    border: 4px solid black;
+    /* margin: 10px; */
+    display: inline-block;
+    font-size: initial;
+    margin: 20px;
+
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+}
+
+/* -------------------------- */
+
+.element {
+    width: 450px;
+    height: 350px;
+    border: 2px solid black;
+}
+
+.v-1 {
+    /* background-color: red; */
+    /* background-color: #e93822; */
+    /* background-color: hsl(200, 67%, 32%); */
+    /* background-color: hsla(200, 67%, 32%, 0.45); */
+    /* background-color: rgba(233, 56, 34, 0.5); */
+}
+
+.v-2 {
+    width: 80%;
+    height: 500px;
+    /* background-image: url('https://assets.ithillel.ua/assets/school/images/logos/homepage_flame.svg'); */
+    /* background-image: url('https://pythonturtle.academy/wp-content/uploads/2019/05/small-39.png'); */
+    background-image: url('https://image.shutterstock.com/z/stock-vector-battery-recycle-sign-illustration-vector-red-icon-with-small-black-and-limitless-shadows-at-1277359879.jpg'), url('https://assets.ithillel.ua/assets/school/images/logos/homepage_flame.svg');
+
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+    /* background-size: auto; */
+    background-size: 350px;
+    /* background-size: 150px 350px; */
+    /* background-size: 100%; */
+    /* background-size: auto 100%; */
+    /* background-size: 100% auto; */
+
+    /* background-size: contain; */
+    /* background-size: cover; */
+
+    /* background-position: 100px 0; */
+    background-position: 25% 50%, top right;
+
+    /* background-position: top right; */
+    /* background-position: bottom center; */
+    /* background-position: right center; */
+    /* background-position: center center; */
+    transition: .4s;
+}
+
+.v-2:hover {
+    background-position: 50%;
+}
+
+
+
+/* ---------------- */
+
+.block {
+    height: initial;
+    min-height: 100px;
+    max-height: 200px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+}

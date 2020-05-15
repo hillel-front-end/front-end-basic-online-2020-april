@@ -1,0 +1,66 @@
+.block {
+    /* padding: 10px; */
+    /* padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-bottom: 35px; */
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 10px 20px 30px; */
+    /* padding: 10px 30px; */
+    
+    /* height: 100px; */
+    /* transition: .1s; */
+
+
+    /* border: 4px solid rgb(244, 32, 56); */
+    /* border: 4px solid #2f269d;
+    border: 4px solid rgba(244, 32, 56, 0.34); */
+    /* border: 4px solid hsl(36, 67%, 34%); */
+    /* border-width: 10px;
+    border-style: dashed;
+    border-color: blue; */
+    /* border: 2px solid black; */
+
+    /* border-radius: 45px; */
+    /* border-radius: 50%; */
+    /* border-radius: 10px 20px 30px 40px; */
+    /* border-radius: 10px 20px 30px; */
+    /* border-radius: 10px 50px; */
+}
+
+.block:hover {
+    padding-left: 25px;
+}
+
+.block:nth-child(1) {
+    background-color: bisque;
+    /* margin: 20px; */
+    /* margin-bottom: 40px; */
+    /* margin: 10px 20px 30px 40px; */
+    /* margin: 10px 40px; */
+
+    width: 300px;
+    /* margin: 0 auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* display: block; */
+    /* display: inline; */
+    display: inline-block;
+}
+
+.block:nth-child(2) {
+    background-color: rebeccapurple;
+}
+
+.element-text {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* font-size: 50px; */
+    /* line-height: 20px; */
+}
+
+p {
+    margin-top: 0;
+}
