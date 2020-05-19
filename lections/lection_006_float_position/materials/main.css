@@ -1,0 +1,84 @@
+.container {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.block {
+    width: 250px;
+    height: 140px;
+    margin: 5px;
+    border: 2px solid red;
+    /* display: inline-block; */
+    position: relative;
+    bottom: 0;
+    transition: .4s;
+}
+
+.block:hover {
+    bottom: 5px;
+}
+
+.c-2 .block {
+    float: left;
+}
+
+.my-item {
+    width: 450px;
+    height: 340px;
+    margin: 5px;
+    border: 2px solid blue;
+    background-color: aquamarine; 
+}
+
+/* clearfix */
+
+.clearfix {
+    clear: both;
+}
+
+.left, .right {
+    width: 50%;
+    height: 50px;
+    float: left;
+    background-color: rebeccapurple;
+}
+
+.right {
+    background-color: cadetblue;
+}
+
+.center {
+    width: 25%;
+    height: 50px;
+    background-color: seagreen;
+}
+
+.block-2 {
+    width: 250px;
+    height: 140px;
+    margin: 5px;
+    border: 2px solid hotpink;
+
+    position: relative;
+    /* top: 45px;
+    left: 120px; */
+}
+
+.heart {
+    width: 9px;
+    height: 18px;
+    /* position: relative;
+    top: -3px;
+    left: -2px; */
+
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%; */
+    /* left: calc(50% - 4.5px);
+    top: calc(50% - 9px); */
+}
+
+.block-2 .container {
+    margin: 20px;
+    height: 80px;
+}

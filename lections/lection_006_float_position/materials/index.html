@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- 
+        Тезисы:
+            - xx:10:00 - float
+            - xx:yy:zz - clearfix
+            - 01:23:30 - position static intro, top, right, left, bottom
+            - xx:yy:zz - position relative
+            - xx:yy:zz - position fixed
+            - xx:yy:zz - position absolute
+            - xx:yy:zz - z-index
+    -->
+
+    <div class="container">
+        <div class="block">Item 1</div>
+        <div class="block">Item 2</div>
+        <div class="block">Item 3</div>
+        <div class="block">Item 4</div>
+    </div>
+    <hr>
+    <div class="container c-2">
+        <div class="block">Item 1</div>
+        <div class="block">
+            Item 2
+            <table border="2">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+        <div class="block">
+            Item 3
+            <div class="l-r-container"> 
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="clearfix"></div>
+                <div class="center"></div>
+            </div>
+        </div>
+        <div class="block">Item 4</div>
+        <span class="block">Span item 5</span>
+        <!-- <div class="my-item">My item</div> -->
+        <div class="clearfix"></div>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <img align="left" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="">
+        Nesciunt, ad adipisci esse tempore totam aperiam repudiandae laudantium vitae repellat expedita at rerum quam dolorem magni optio, beatae ratione, molestiae asperiores.
+    </div>
+
+    <!-- 
+        Элемент позиционируется как обычно, а затем вынимается из 
+        потока и сдвигается влево (для left) 
+        или вправо (для right) до того как коснётся либо границы
+        родителя, либо другого элемента с float. 
+    -->   
+    <hr>
+    <!-- position -->
+    <!-- static -->
+    <div class="block"></div>
+    <hr>
+    <!-- relative -> left, top, right, bottom -->
+    <div class="block-2">
+        
+        <div class="container">
+            Hello! 
+            <span class="heart">&#9829;</span>
+            
+        </div>
+    </div>
+    <h3>Title Head</h3>
+    <p>
+        Hello text description 
+        <!-- <span class="heart">&#9829;</span> -->
+    </p>
+
+    <!-- absolute -> left, top, right, bottom -->
+</body>
+</html>
