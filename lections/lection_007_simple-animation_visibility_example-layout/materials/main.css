@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 50px;
+    margin: 25px;
+    border: 10px solid burlywood;
+
+    position: relative;
+}
+
+.block {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 300px;
+    z-index: 5;
+    /* height: 200px; */
+    padding-top: 15px;
+    
+
+    /* position: relative; */
+    position: absolute;
+
+    top: calc(100% + 10px);
+    left: 0;
+
+    transition: opacity 1s, height .5s, visibility 0s 1s;
+}
+
+.block-content {
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.container:hover .block {
+    visibility: visible;
+    opacity: 1;
+    height: 250px;
+    /* display: block; */
+    transition: opacity .1s, height 2s, visibility 0s;
+}
+
+
+
+
+.popup {
+    /* width: 450px; */
+    /* height: 325px; */
+    /* border: 2px solid black;
+    background-color: blanchedalmond; */
+
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size: 120px;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Transition */
+/* transition: имя свойства | длительность | временная функция | задержка */
+
+.element {
+    width: 320px;
+    height: 280px;
+
+    font-size: 16px;
+    background-color: #000;
+    visibility: visible;
+
+    z-index: 4;
+    /* transition: 2s 1s; */
+    /* transition-duration: 2s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: cubic-bezier(0.16, 0.76, 0.18, -0.61); */
+    
+
+    /* transition: all .5s ease-in-out 1s; */
+
+    /* transition: left 4s ease, font-size .2s, background-color 0s 1s; */
+
+    transition-property: font-size, left, background-color;
+    transition-duration: 1s, 2s, 4s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.16, 0.76, 0.18, -0.61);
+
+
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.element:hover, .element.animated {
+    left: 250px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.sample {
+    color: red;
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+
+/* Transform */
+
+/* 
+    transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: perspective(17px);
+    transform: rotate(0.5turn);
+    transform: rotate3d(1, 2.0, 3.0, 10deg);
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+    transform: rotateZ(10deg);
+    transform: translate(12px, 50%);
+    transform: translate3d(12px, 50%, 3em);
+    transform: translateX(2em);
+    transform: translateY(3in);
+    transform: translateZ(2px);
+    transform: scale(2, 0.5);
+    transform: scale3d(2.5, 1.2, 0.3);
+    transform: scaleX(2);
+    transform: scaleY(0.5);
+    transform: scaleZ(0.3);
+    transform: skew(30deg, 20deg);
+    transform: skewX(30deg);
+    transform: skewY(1.07rad);
+*/
+
+
+.transform-me {
+    position: fixed;
+    background-image: url(http://htmlbook.ru/themes/hb/img/logo.png);
+    background-size: cover;
+    left: 600px;
+    top: 700px;
+    width: 400px;
+    height: 350px;
+    border: 2px solid black;
+    transition: 1s;
+
+    transform: rotate(420deg) translate(300px, -50px);
+    /* transform-origin: 100px -100px; */
+}
+
+.transform-me:hover {
+    /* transform: scale(2); */
+    /* transform: scale(2, 1.5); */
+    
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: rotateZ(180deg); */
+    
+    /* transform: translate(500px); */
+    /* transform: translate(500px, 250px); */
+    /* transform: rotate(45deg);
+    transform-origin: 0 0; */
+}
