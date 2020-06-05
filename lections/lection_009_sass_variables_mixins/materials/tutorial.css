@@ -1,0 +1,128 @@
+.wrapper > div.wrap-item .container {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wrapper > div.wrap-item .container .link {
+  color: red;
+  font-size: 15px;
+  -webkit-box-shadow: 1px 2px 1px 4px black;
+          box-shadow: 1px 2px 1px 4px black;
+}
+
+.wrapper > div.wrap-item .container .link:hover {
+  color: blue;
+  font-size: 17px;
+}
+
+.wrapper > div.wrap-item .container .link span {
+  color: blue;
+}
+
+.wrapper > div.wrap-item .container .link + span {
+  text-decoration: underline;
+}
+
+.wrapper > div.wrap-item .container .link[bordered] {
+  border: 2px solid red;
+}
+
+.wrapper > div.wrap-item .container span {
+  text-decoration: underline;
+}
+
+.wrapper > div.wrap-item .container span.error {
+  color: red;
+}
+
+.wrapper > div.wrap-item .container span.warn {
+  color: yellow;
+}
+
+.wrapper > div.wrap-item .container span.success {
+  color: green;
+}
+
+.wrapper > div.wrap-item .container > li {
+  color: green;
+  padding: 5px 10px 5px 15px;
+}
+
+.wrapper > div.wrap-item .container > li a {
+  color: orange;
+}
+
+.wrapper > div.wrap-item .container ~ .block:first-child {
+  border: 2px solid black;
+}
+
+.block {
+  background-color: red;
+  border: 2px dotted blue;
+}
+
+.block .element {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.block .link {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.block .block-1 {
+  background-image: url("images/img1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.block .block-2 {
+  background-image: url("images/img2.png");
+  background-repeat: repeat-x;
+  background-size: 100px 250px;
+}
+
+.element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=tutorial.css.map */

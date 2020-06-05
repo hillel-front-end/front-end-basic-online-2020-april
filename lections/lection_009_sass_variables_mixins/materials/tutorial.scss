@@ -1,0 +1,155 @@
+$main-color__red: red;
+$color-g: green;
+
+$default-padding: 5px 10px 5px 15px;
+
+$fs_s: 15px;
+$fs_m: 18px;
+$fs_l: 24px;
+
+$width: 120px;
+
+$shadow-default: 1px 2px 1px 4px black;
+
+.wrapper > div.wrap-item .container  {
+    width: $width / 2;
+
+    display: flex;
+    border-radius: 15px;
+    transform: rotate(45deg);
+
+    .link {
+        color: $main-color__red;
+        font-size: $fs_s;
+
+        &:hover {
+            color: blue;
+
+            font-size: $fs_s + 2;
+        }
+
+        box-shadow: $shadow-default;
+
+        span {
+            color: blue;
+        }
+
+        + span {
+            text-decoration: underline;
+        }
+
+        &[bordered] {
+            border: 2px solid $main-color__red;
+        }
+    }
+
+    span {
+        text-decoration: underline;
+
+        &.error {
+            color: $main-color__red;
+        }
+    
+        &.warn {
+            color: yellow;
+        }
+
+        &.success {
+            color: $color-g;
+        }
+    }
+
+    > li {
+        color: $color-g;
+
+        a {
+            color: orange;
+        }
+
+        padding: $default-padding;
+    }
+
+    ~ .block:first-child {
+        border: 2px solid black;
+    }
+}
+
+
+
+
+// mixin
+
+$border-radius: 10px;
+$border-color: black;
+$border-style: solid;
+$border-size: 2px;
+// $border-size: 8px;
+
+// SASS/SCSS Linter
+
+// function === mixin
+@mixin border {
+    border-radius: $border-radius;
+    border: $border-size $border-style $border-color;
+}
+
+@mixin bg($bg-url: 'example.png', $repeatMode: no-repeat, $size: 100% 100%) {
+    background-image: url($bg-url);
+    background-repeat: $repeatMode;
+    background-size: $size;
+}
+
+.block {
+    background-color: red;
+    border: $border-size dotted blue;
+
+    .element {
+        position: relative;
+        top: 10px;
+        left: 10px;
+
+        @include border;
+    }
+
+    .link {
+        @include border;
+    }
+
+    .block-1 {
+        @include bg('images/img1.png', no-repeat, 100%);
+    }
+
+    .block-2 {
+        @include bg('images/img2.png', repeat-x, 100px 250px); 
+    }
+
+    .block-3 {
+        // @include bg();
+        // @include bg('images/img3.png');
+        // @include bg('images/img3.png', no-repeat, 50%);
+    }
+}
+
+
+@mixin flexbox($dir: row, $jc: flex-start, $ai: flex-start) {
+    display: flex;
+
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+
+.element {
+    @include flexbox;
+    
+    align-items: center;
+}
+
+.block {
+    @include flexbox;
+}
+
+
+
