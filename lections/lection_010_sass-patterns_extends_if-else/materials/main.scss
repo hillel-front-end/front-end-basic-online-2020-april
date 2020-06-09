@@ -1,0 +1,83 @@
+// @use "styles/variables";
+// @import "styles/variables";
+// @import "styles/mixins";
+// ...................
+@use "sass:list";
+@import 'styles/lib';
+
+$color-primary: red;
+
+
+.container {
+  width: 100%;
+  color: $color-primary;
+  background-color: $color-secondary;
+
+  @include border;
+}
+
+$example: 5;
+$key: top;
+
+
+.block {
+  width: 320px;
+  position: relative;
+  top: 120px + $example;
+
+  .inner-#{$example} {
+    color: blue;
+
+    #{$key}: 100px;
+  }
+}
+
+
+$list: 1, 2, 3, 4, 5, 6;
+$colors: red, orange, blue, green, aqua, brown;
+
+
+.foo-bar-example {
+  @each $index in $list {
+    .block-#{$index} {
+      color: blue;
+      // background-color: rgb(10*$index, 20*$index, 30*$index);
+      background-color: nth($colors, $index);
+    }
+  }
+}
+
+$map-example: (
+  top: 10px,
+  left: 120px,
+  position: absolute,
+  border: 2px solid black,
+  colorType: 4
+);
+
+.super-element {
+  @each $key, $value in $map-example {
+    @if $key != 'colorType' {
+      #{$key}: $value;
+    } @else {
+      background-color: nth($colors, $value);
+    }
+  }
+}
+
+
+// .foo-bar-example_description {
+//   // $index = 1
+//   .block-1 {
+//     color: blue;
+//   }
+
+//   // $index = 2
+
+//   .block-2 {
+//     color: blue;
+//   }
+
+//   // ....
+// }
+

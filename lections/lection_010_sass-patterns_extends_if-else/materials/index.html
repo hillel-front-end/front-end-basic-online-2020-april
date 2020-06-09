@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="practice.css">
+    <script>
+
+
+        window.addEventListener('load', () => {
+            let search = document.querySelector('.search');
+            search.addEventListener('click', function(event) {
+                event.stopPropagation();
+                this.classList.add('focus');
+
+                document.addEventListener('click', function() {
+                    search.classList.remove('focus');
+                }, { once: true });
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <!-- 
+        Тезисы:
+            - xx:09:00 - interpolation
+            - xx:26:00 - maps
+            - xx:45:00 - @each
+            - xx:57:00 - @extend, @if
+            - xx:yy:zz - placeholders %
+    -->
+
+    <div class="container">
+
+        <div class="search">
+            <input class="search__input">
+            <span class="search__icon material-icons">search</span>
+
+
+            <div class="close-action">
+                <span class="close-action__icon material-icons">close</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="close-action">
+        <span class="close-action__icon material-icons">close</span>
+    </div>  
+</body>
+</html>
