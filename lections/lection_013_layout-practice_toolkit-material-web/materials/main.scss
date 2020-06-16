@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color: #000;
+}
+
+
+.main-wrapper, .left-col, .main-col, .right-col {
+    height: 100%;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.left-col {
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+}
+
+.right-col {
+    width: 520px;
+    flex-shrink: 0;
+    background-color: salmon;
+}
+
+.menu-bar {
+    width: 132px;
+    background-color: #000;
+    border-radius: 24px;
+    height: 100%;
+
+    box-shadow: 20px 6px 55px -15px black;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    &__nav {
+        margin-top: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: #fff;
+            margin-bottom: 64px;
+        }
+
+        .material-icons {
+            font-size: 30px;
+        }
+    }
+}
+
+.additional-actions {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+.main-col {
+    width: 100%;
+    margin-right: 64px;
+    padding-top: 24px;
+}
+
+.hello-section {
+    height: 190px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__content-container {
+        margin-top: 30px;
+        height: 100%;
+        background-color: #F5F5F7;
+        border-radius: 14px;
+    }
+
+    &__boy {
+        position: absolute;
+        bottom: 0;
+        right: 104px;
+        // height: 100%;
+    }
+
+    &__content-container {
+        padding-top: 46px;
+        padding-left: 32px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 57px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: 800;
+    }
+
+    &__subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+}
