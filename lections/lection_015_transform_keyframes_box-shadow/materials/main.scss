@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// rotate, translate, scale, skew, matrix
+
+.block {
+    width: 250px;
+    height: 200px;
+    // background-color: palevioletred;
+    border: 4px solid black;
+    border-radius: 15px;
+    background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+    // background-size: cover;
+    
+    // transition-timing-function: linear;
+    
+    // matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+
+    // transform-origin: center;
+    // transform-origin: 150% 150%;
+
+    // transition: transform .2s;
+
+    &:hover {
+        // transform: rotate(45deg);
+        // transform: rotateX(45deg);
+        // transform: rotateY(45deg);
+        // transform: rotateZ(45deg);
+
+        // transform: scale(1.5);
+        // transition: transform 2s;
+        // transform: scaleX(1.05);
+        // transform: scaleY(1.05);
+        // transform: scale(1.05, 1.30);
+        // transform: scaleX(1.05) scaleY(1.05) rotate(45deg);
+
+
+        // transform: translate(100px, 100px); 
+        // transform: translateX(100px); 
+        // transform: translateY(100px); 
+
+        // ----------------------------
+
+        
+    }
+}
+
+@keyframes example {
+    0% {
+        // width: 200px;
+        transform: rotate(0);
+    }
+
+    50% {
+        // transform: rotate(30deg);
+    }
+
+    52% {
+        // border-radius: 50px;
+    }
+    
+    100% {
+        // width: 500px;
+        // border-color: red;
+        transform: rotate(360deg);
+    }
+}   
+
+
+.target {
+    width: 200px;
+    height: 200px;
+    border: 6px solid black;
+    border-radius: 50%;
+    background-image: url(./download.jpg);
+    background-position: center;
+    background-size: 110%;
+    position: relative;
+
+    animation: example 1s linear 1s infinite normal forwards;
+}
+
+.inner {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.eyes {
+    display: flex;
+}
+
+@keyframes blink {
+    20% {
+        // transform: scaleY(0);
+        height: 20px;
+        margin-top: 90px;
+    }
+
+    100% {
+        // transform: scaleY(0);
+        height: 20px;
+        margin-top: 90px;
+    }
+}
+
+.eye {
+    width: 75px;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 50%;
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+
+        animation: panic;
+        animation-duration: .2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    &:nth-child(2) {
+        &:after {
+            animation-direction: alternate-reverse;
+            animation-duration: .5s;
+        }
+    }
+
+    &:hover {
+        &:after {
+            animation-play-state: paused;
+        }
+    } 
+}
+
+
+
+@keyframes panic {
+    0% {
+     left: calc(50% - 20px);
+    }
+
+    100% {
+        left: 50%;
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+// 
+// animation by default
+
+// animation-name: none
+// animation-duration: 0s
+// animation-timing-function: ease
+// animation-delay: 0s
+// animation-iteration-count: 1
+// animation-direction: normal
+// animation-fill-mode: none
+// animation-play-state: running
+
