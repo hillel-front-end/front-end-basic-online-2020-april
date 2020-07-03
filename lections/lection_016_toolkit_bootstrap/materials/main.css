@@ -1,0 +1,9 @@
+.item {
+    border: 2px solid black;
+    height: 50px;
+    /* width: 50px; */
+}
+
+.m-border-right {
+    border-right: 5px solid #dee2e6!important;
+}
