@@ -106,10 +106,12 @@ for(i = 0; i < A.length; i++) {
 }
 console.log(A);
 
-// A = [-23,-52,-5,-34,-436,-23,-6,-246];
+// A = [-23,-52,-5,'sg3',-34,-436,-23,-6,-246, 'dfgfhgjh'];
 // max = 0; // wrong
 max = A[0];
 min = A[0];
+
+strings = [];
 
 for(i = 1; i < A.length; i++) {
     if (A[i] > max) {
@@ -118,6 +120,10 @@ for(i = 1; i < A.length; i++) {
     if (A[i] < min) {
         min = A[i];
     }
+
+    // if(typeof A[i] == 'string') {
+    //     strings[strings.length] = A[i]; 
+    // }
 }
 
 console.log('max = ', max)
