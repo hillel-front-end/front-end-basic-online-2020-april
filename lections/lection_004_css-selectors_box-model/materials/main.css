@@ -139,7 +139,7 @@ ul.list ~ span a {
     color: red;
 }
 
-.my-list li:nth-last-of-type(2) {
+.my-list li:nth-last-of-type(2) {   
     color: red;
 } */
 

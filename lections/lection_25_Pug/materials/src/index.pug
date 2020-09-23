@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        header.header#foo
+            input(type="checkbox" name="iphone" checked)
+        main.main
+            a(href="", alt="link") link
+            - var isHidden = true;
+            div(class= isHidden? 'hidden': 'visible')
+
+
+        - var menu = 'row';
+        aside
+            ul(class = menu)
+                - for(var i = 0; i < 15; i++) 
+                    li(class=menu + '__item')
+                        a(class=menu + '__item-link', href="http") item
+        
+        article.gallery
+            - var arr = ['1.png', '3.png', '2.png']
+            each item in arr
+                img(src='./src/assets/img/' +  item, alt="")
+
+        - var icons = ['fas fa-camera', 'fab fa-adobe', 'fas fa-camera']
+        .icons-pack
+            each icon in icons 
+                i(class=icon) #{icon}
+
+        - 
+            var teams = [ 
+                { 
+                    name: 'Valera',
+                    lastName: 'Ternavskiy', 
+                    img: 'valera.png', 
+                    description: 'asdasdasd' 
+                },
+                { 
+                    name: 'Кихун', 
+                    lastName: 'Ли', 
+                    img: '/assets/images/advisors/people/kihoon.jpg', 
+                    description: 'Кихун Ли — эксперт в области образования, криптовалют и развития бизнес-стратегий. В течение 18 лет он занимается управлением и развитием коммерческих образовательных организаций, а с 2015 года, увидев огромный потенциал рынка криптовалют, начал работу и в индустрии блокчейна. В 2017 году Кихун Ли запустил основанную на ИИ программу-бот для трейдинга и в настоящее время управляет одной из крупнейших майнинговых GPU‑ферм в Корее. На сегодняшний день его последнее рискованное начинание — университет UnU Global — имеет филиалы в семи странах, включая Корею, Японию, Китай, Гонконг, Индонезию, Филиппины и Тайвань. Его первой коммерческой образовательной организацией стал основанный в 1999 году частный языковой институт, который за 15 лет расширился и теперь включает более 1800 франчайзинговых учреждений по всей стране. В 2009 году Ли разработал программное обеспечение для автоматизированной системы языкового обучения IMT и впоследствии получил три патента на данное изобретение. В 2010 году он внедрил эту систему в начальных школах, входящих в структуру Сеульского национального университета, а в 2013 году — приступил к созданию UNU Education Group. В марте 2016 года правительство Китая предоставило ему право следить за аттестацией уровня владения китайским языком (HKC) в Корее и Японии. Кихун Ли руководит пятью китайскими языковыми школами в Корее и в ближайшем будущем планирует расширить эту образовательную сеть в других странах.' 
+                },
+                { 
+                    name: 'Моу', 
+                    lastName: 'Левин', 
+                    img: '/assets/images/advisors/people/kihoon.jpg', 
+                    description: 'Доктор Моу Левин — главный исполнительный директор компании Keynote, инвестор высокотехнологичных стартапов, а также советник правительственных и регулирующих органов, банков ' 
+                } 
+            ]
+        
+        div.teams
+            each person in teams.reverse()
+                section(class="person person__" + person.name.toLowerCase())
+                    img(src=person.img)
+                    .description #{person.description}
+
+        - var isHiiden = false; 
+
+        if isHiiden == true
+            .container
+               p ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem repellendus est harum delectus distinctio dolorem praesentium beatae, neque in sequi explicabo ducimus et porro culpa nulla nemo. Aliquid, quis.
+        else 
+            .container-fluid
+                h2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore corrupti quos id animi, iste commodi eius voluptatem sit cumque dolorum. Dolore illum consequuntur eos libero in. Velit, consequuntur magni?
+        
+        footer.footer
+            - var name = 'Valera';
+            - var a = 12;
+            - var b = 13;
+            - var res = a + b;
+
+            span Hello #{name + ' ' + 'Ternavsky'} #{res}
+    script(src="main.js")

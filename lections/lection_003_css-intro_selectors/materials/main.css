@@ -79,12 +79,15 @@ img {
     text-decoration: underline;
 } */
 
+
 /* ----------------------------------------------------------- */
 
 
 /* .container ul li {
     text-decoration: underline;
 }
+// В зависимости на ком active - то разное поведение
+// создать 2 списка с разными стилями
 
 .container ul .active {
     background-color: rosybrown;

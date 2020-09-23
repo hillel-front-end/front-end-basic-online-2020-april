@@ -16,7 +16,6 @@
     
     // transition-timing-function: linear;
     
-    // matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
 
     // transform-origin: center;
     // transform-origin: 150% 150%;
@@ -62,8 +61,6 @@
     }
     
     100% {
-        // width: 500px;
-        // border-color: red;
         transform: rotate(360deg);
     }
 }   
@@ -100,13 +97,12 @@
     20% {
         // transform: scaleY(0);
         height: 20px;
-        margin-top: 90px;
+
     }
 
     100% {
         // transform: scaleY(0);
         height: 20px;
-        margin-top: 90px;
     }
 }
 
